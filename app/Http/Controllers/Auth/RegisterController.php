@@ -29,17 +29,17 @@ class RegisterController extends Controller
      *
      * @var string
      */
-    // protected $redirectTo = '/home';
+    protected $redirectTo = 'admin/dashboard';
 
-    protected function redirectTo(){
-        if(Auth::user()->usertype == 'admin'){
-            return 'admin/dashboard';
-        }elseif(Auth::user()->usertype == 'admin'){
-            return 'author/dashboard';
-        }else{
-            return '/';
-        }
-    }
+    // protected function redirectTo(){
+    //     if(Auth::user()->usertype == 'admin'){
+    //         return 'admin/dashboard';
+    //     }elseif(Auth::user()->usertype == 'admin'){
+    //         return 'author/dashboard';
+    //     }else{
+    //         return '/';
+    //     }
+    // }
    
 
     /**

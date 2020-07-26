@@ -42,10 +42,6 @@
 	          <li class="nav-item"><a href="{{url('login')}}" class="nav-link">Login</a></li>
 	          <li class="nav-item"><a href="{{url('/product/wishlist')}}" class="nav-link">Whislist</a></li>
 	          <li class="nav-item cta cta-colored">
-				  	<a href="{{url('showCart')}}" class="nav-link">
-						  <span class="icon-shopping_cart"></span>
-						  {{Cart::getTotalQuantity()}}
-					</a>
 			</li>
 	        </ul>
 	      </div>

@@ -10,9 +10,9 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
-Auth::routes();
+Auth::routes(['verified'=> 'true']);
 
-Route::middleware('auth', 'admin')->namespace('Admin')->prefix('admin')->group(function () {
+Route::middleware('auth')->namespace('Admin')->prefix('admin')->group(function () {
     Route::get('/dashboard','AdminController@index');
     Route::resource('/category','CategoryController');
     Route::resource('/tag','TagController');

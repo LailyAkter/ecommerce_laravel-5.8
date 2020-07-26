@@ -5,22 +5,22 @@
             <a class="nav-link" data-widget="pushmenu" href="#"><i class="fas fa-bars"></i></a>
         </li>
         <li class="nav-item d-none d-sm-inline-block">
-            <a href="{{URL::to('admin')}}" class="nav-link">Home</a>
+            <a href="{{url('admin')}}" class="nav-link">Home</a>
         </li>
         <li class="nav-item d-none d-sm-inline-block">
-            <a href="{{URL::to('tag')}}" class="nav-link">Tags</a>
+            <a href="{{url('tag')}}" class="nav-link">Tags</a>
         </li>
         <li class="nav-item d-none d-sm-inline-block">
-            <a href="{{URL::to('brand')}}" class="nav-link">Brands</a>
+            <a href="{{url('brand')}}" class="nav-link">Brands</a>
         </li>
         <li class="nav-item d-none d-sm-inline-block">
-            <a href="{{URL::to('category')}}" class="nav-link">Categories</a>
+            <a href="{{url('category')}}" class="nav-link">Categories</a>
         </li>
         <li class="nav-item d-none d-sm-inline-block">
-            <a href="{{URL::to('product')}}" class="nav-link">Products</a>
+            <a href="{{url('product')}}" class="nav-link">Products</a>
         </li>
         <li class="nav-item d-none d-sm-inline-block">
-            <a href="{{URL::to('contact')}}" class="nav-link">Contact</a>
+            <a href="{{url('contact')}}" class="nav-link">Contact</a>
         </li>
        
     </ul>

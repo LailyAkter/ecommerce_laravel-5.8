@@ -5,7 +5,7 @@ namespace App\Http\Controllers\Admin;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use Brian2694\Toastr\Facades\Toastr;
-
+use Str;
 use App\Admin\Brand;
 
 class BrandController extends Controller
@@ -45,7 +45,7 @@ class BrandController extends Controller
 
         $brands = new Brand();
         $brands->brand_name = $request->brand_name;
-        $brands->slug = str_slug($request->brand_name);
+        $brands->slug = Str::slug($request->brand_name);
         $brands->save();
 
         Toastr::success('Brand Successfully Save', 'Success');
@@ -88,7 +88,7 @@ class BrandController extends Controller
         $brands = Brand::find($id);
 
         $brands->brand_name = $request->brand_name;
-        $brands->slug = str_slug($request->brand_name);
+        $brands->slug = Str::slug($request->brand_name);
         $brands->save();
 
         Toastr::success('Brand Successfully Updated', 'Success');
